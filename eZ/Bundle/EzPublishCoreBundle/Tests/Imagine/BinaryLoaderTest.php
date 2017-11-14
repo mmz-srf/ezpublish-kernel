@@ -14,7 +14,7 @@ use eZ\Publish\Core\IO\Exception\InvalidBinaryFileIdException;
 use eZ\Publish\Core\IO\Values\BinaryFile;
 use eZ\Publish\Core\IO\Values\MissingBinaryFile;
 use Liip\ImagineBundle\Exception\Binary\Loader\NotLoadableException;
-use Liip\ImagineBundle\Model\Binary;
+use Liip\ImagineBundle\Model\FileBinary;
 use PHPUnit\Framework\TestCase;
 
 class BinaryLoaderTest extends TestCase
@@ -122,7 +122,7 @@ class BinaryLoaderTest extends TestCase
             ->with($binaryFile->id)
             ->will($this->returnValue($mimeType));
 
-        $expected = new Binary($content, $mimeType, $format);
+        $expected = new FileBinary($path, $mimeType, $format);
         $this->assertEquals($expected, $this->binaryLoader->find($path));
     }
 }
