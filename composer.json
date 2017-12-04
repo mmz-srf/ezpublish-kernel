@@ -1,7 +1,7 @@
 {
     "name": "ezsystems/ezpublish-kernel",
     "description": "Kernel used by ezsystems/ezplatform and derivatives. Provides the Content Repository, its APIs, and the application's Symfony framework integration.",
-    "homepage": "http://share.ez.no",
+    "homepage": "https://ezplatform.com",
     "license": "GPL-2.0",
     "suggest": {
         "php-64bit": "For support of more than 30 languages, a 64bit php installation on all involved prod/dev machines is required"
@@ -17,7 +17,7 @@
         "ext-SPL": "*",
         "ext-xsl": "*",
         "zetacomponents/mail": "~1.8",
-        "symfony/symfony": "^2.7 | ^3.1",
+        "symfony/symfony": "~2.7.38 | ~2.8.31 | ^3.3.13",
         "symfony-cmf/routing": "~1.1",
         "qafoo/rmf": "1.0.*",
         "kriswallsmith/buzz": ">=0.9",
